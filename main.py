@@ -4,6 +4,6 @@ from streamlit_gsheets import GSheetsConnection
 #Create a connection object.
 conn = st.connection("gsheets", type=GSheetsConnection)
 
-data = conn.read()
+data = conn.read(worksheet = "Saved_Samples")
 
 data
